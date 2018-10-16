@@ -71,7 +71,7 @@ function crystalClick() {
   if (counter === targetNumber) {
     // alert("You win!");
     wins ++;
-    $(".wins").text(win);
+    $(".wins").text(wins);
     reset();
   }else if(counter > targetNumber){
     // alert("You lose!!");
