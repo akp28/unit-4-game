@@ -9,7 +9,7 @@ var image = [
 var targetNumber = randomNumber(19,120);
 // console.log("Global" + targetNumber);
 var counter = 0;
-var imageCrystal;
+// var imageCrystal;
 var wins = 0;
 var loss = 0;
 $(".wins").text(wins);
@@ -37,7 +37,7 @@ setImageCrystal();
 function setImageCrystal(){
     for (var i = 0; i < image.length; i++) {
     // For each iteration, we will create an imageCrystal
-    imageCrystal = $("<img>");
+    var imageCrystal = $("<img>");
     // First each crystal will be given the class ".crystal-image".
     // This will allow the CSS to take effect.
     imageCrystal.addClass("crystal-image");
